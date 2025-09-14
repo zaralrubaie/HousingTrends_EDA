@@ -1,4 +1,3 @@
-# HousingTrends_EDA
 # Property_EDA_Visualizations
 
 ## Overview
@@ -39,7 +38,7 @@ The project includes visualizations for key categorical features:
 - **RESALE** – Count of resale vs. new properties.  
 - **BHK_OR_RK** – Comparison of BHK vs. RK properties.  
 
-> All plots are saved in the `plots/` folder. Detailed insights and explanations for each visualization can be found in the `EDA.py` notebook.  
+> All comparison plots are saved in the `EDA - PLOTS.zip` file. Full analysis and insights are available in the `EDA-data.py` script.
 
 ---
 
@@ -50,7 +49,7 @@ The project includes visualizations for key numerical features:
 - **Square Feet Distribution** – Shows the distribution of property sizes. Most properties have smaller areas (~35,000 sq.ft), but a few large properties exist (up to 250,000 sq.ft), creating a right-skewed distribution.  
 - **Price Distribution (TARGET)** – Shows the distribution of property prices. Most properties are priced on the lower end, with a few high-value outliers, creating a right-skewed distribution.  
 
-> All plots are saved in the `plots/` folder. Detailed explanations and insights for each visualization can be found in the `EDA.py` notebook.  
+> All comparison plots are saved in the `EDA - PLOTS.zip` file. Full analysis and insights are available in the `EDA-data.py` script.
 
 ---
 
@@ -61,7 +60,7 @@ The project also includes visual comparisons between train and test datasets for
 - **POSTED_BY: Train vs Test** – Both datasets show similar distributions, with **Dealers** listing most properties, followed by **Owners** and **Builders**.  
 - **SQUARE_FT: Train vs Test** – The distributions are similar, but the test set has a slightly higher peak density (~2) compared to the train set (~1.23), indicating clustering of property sizes.  
 
-> All comparison plots are saved in the `plots/` folder. Full analysis and insights are available in the `EDA.py` notebook.  
+> All comparison plots are saved in the `EDA - PLOTS.zip` file. Full analysis and insights are available in the `EDA-data.py` script.
 
 ---
 
@@ -82,4 +81,17 @@ The project also includes visual comparisons between train and test datasets for
 ---
 
 ## Project Structure
-
+````
+Property_EDA_Visualizations/
+│
+├── EDA - PLOTS.zip        # Contains all saved plot images
+├── EDA-data.py            # Python script with EDA code and explanations
+├── LICENSE                # MIT License file
+└── README.md              # Project overview, explanations, and instructions
+> To view all the plots, download and extract the `EDA - PLOTS.zip` file.
+````
+## Notes
+- All plots are inside the zip file. You can extract it to view the images.
+- Detailed explanations for each visualization are included in EDA-data.py.
+## ## License
+This project is licensed under the [MIT License](LICENSE).
