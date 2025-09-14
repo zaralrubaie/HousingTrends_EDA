@@ -29,57 +29,43 @@ The analysis highlights **data visualization skills** using Python, Matplotlib, 
 
 ---
 
-## Exploratory Data Analysis (EDA)
+## 1. Categorical Feature Distributions
 
-### 1. Categorical Feature Distributions
+The project includes visualizations for key categorical features:  
 
-**POSTED_BY Distribution**  
-![POSTED_BY](plots/01_posted_by_distribution.png)  
-> Most properties are listed by **Dealers**, followed by **Owners** and **Builders**, indicating dealer-dominated listings.
+- **POSTED_BY** – Distribution of property listings by Dealers, Owners, and Builders.  
+- **UNDER_CONSTRUCTION** – Shows the count of properties under construction vs. completed.  
+- **READY_TO_MOVE** – Percentage of properties ready to move vs. not.  
+- **RESALE** – Count of resale vs. new properties.  
+- **BHK_OR_RK** – Comparison of BHK vs. RK properties.  
 
-**UNDER_CONSTRUCTION**  
-![UNDER_CONSTRUCTION](plots/02_under_construction.png)  
-> Majority of properties are **not under construction**, showing a market preference for completed properties.
-
-**READY_TO_MOVE**  
-![READY_TO_MOVE](plots/03_ready_to_move_pie.png)  
-> Around **82% of properties are ready to move**, highlighting availability for immediate possession.
-
-**RESALE**  
-![RESALE](plots/04_resale_distribution.png)  
-> Most properties are **resale**, suggesting previously owned properties dominate the market.
-
-**BHK_OR_RK**  
-![BHK_OR_RK](plots/05_bhk_or_rk_distribution.png)  
-> Majority of properties are **BHK units**, indicating standard multi-room apartments dominate the market.
+> All plots are saved in the `plots/` folder. Detailed insights and explanations for each visualization can be found in the `EDA.py` notebook.  
 
 ---
 
-### 2. Numerical Feature Distributions
+## 2. Numerical Feature Distributions
 
-**Square Feet Distribution**  
-![SQUARE_FT](plots/06_square_ft_distribution.png)  
-> Most properties have smaller areas (~35,000 sq.ft), but a few large properties exist (up to 250,000 sq.ft), creating a right-skewed distribution.
+The project includes visualizations for key numerical features:  
 
-**Price Distribution (TARGET)**  
-![PRICE](plots/07_target_price_distribution.png)  
-> Property prices are mostly on the lower end with a few high-value outliers, showing a right-skewed distribution.
+- **Square Feet Distribution** – Shows the distribution of property sizes. Most properties have smaller areas (~35,000 sq.ft), but a few large properties exist (up to 250,000 sq.ft), creating a right-skewed distribution.  
+- **Price Distribution (TARGET)** – Shows the distribution of property prices. Most properties are priced on the lower end, with a few high-value outliers, creating a right-skewed distribution.  
 
----
-
-### 3. Train vs Test Comparison
-
-**POSTED_BY: Train vs Test**  
-![POSTED_BY Train vs Test](plots/08_posted_by_train_vs_test.png)  
-> Both datasets show similar distributions, with **Dealers** listing most properties, followed by **Owners** and **Builders**.
-
-**SQUARE_FT: Train vs Test**  
-![SQUARE_FT Train vs Test](plots/09_square_ft_train_vs_test.png)  
-> The distributions are similar, but the test set has a slightly higher peak density (~2) compared to train (~1.23), indicating clustering of property sizes.
+> All plots are saved in the `plots/` folder. Detailed explanations and insights for each visualization can be found in the `EDA.py` notebook.  
 
 ---
 
-### 4. Insights & Summary
+## 3. Train vs Test Comparison
+
+The project also includes visual comparisons between train and test datasets for key features:  
+
+- **POSTED_BY: Train vs Test** – Both datasets show similar distributions, with **Dealers** listing most properties, followed by **Owners** and **Builders**.  
+- **SQUARE_FT: Train vs Test** – The distributions are similar, but the test set has a slightly higher peak density (~2) compared to the train set (~1.23), indicating clustering of property sizes.  
+
+> All comparison plots are saved in the `plots/` folder. Full analysis and insights are available in the `EDA.py` notebook.  
+
+---
+
+## 4. Insights & Summary
 - Dealers dominate property listings in both train and test datasets.  
 - Most properties are ready-to-move and resale, highlighting buyer preference for completed properties.  
 - The market is dominated by BHK units and smaller properties, but high-value and large-area properties exist as outliers.  
