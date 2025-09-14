@@ -88,8 +88,9 @@ Property_EDA_Visualizations/
 ├── EDA-data.py            # Python script with EDA code and explanations
 ├── LICENSE                # MIT License file
 └── README.md              # Project overview, explanations, and instructions
-> To view all the plots, download and extract the `EDA - PLOTS.zip` file.
 ````
+> To view all the plots, download and extract the `EDA - PLOTS.zip` file.
+
 ## Notes
 - All plots are inside the zip file. You can extract it to view the images.
 - Detailed explanations for each visualization are included in EDA-data.py.
