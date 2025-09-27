@@ -94,5 +94,5 @@ Property_EDA_Visualizations/
 ## Notes
 - All plots are inside the zip file. You can extract it to view the images.
 - Detailed explanations for each visualization are included in EDA-data.py.
-## ## License
+##  License
 This project is licensed under the [MIT License](LICENSE).
